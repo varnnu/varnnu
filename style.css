@@ -219,15 +219,17 @@ header {
   z-index: 1;
 }
 
-/* name */
+/* name  */
 .landing-text h1 {
-  font-size: 8rem;
+  font-size:  11rem;
   font-weight: 500;
-  font-family: "Kaushan Script", sans-serif;
-  background: linear-gradient(to top,#ff00cc 25%, #333399);
+  font-family:  "Kaushan Script", sans-serif;
+  background: linear-gradient(to top,ivory 25%, rgba(31, 131, 134, 0.644));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 1rem;
+ width:950px;
+  
+ 
   user-select: none;
   line-height: 1.1;
 }
@@ -1125,3 +1127,5 @@ padding-bottom: 30px
 font-size: 2rem
 }
 /*End contact*/
+
+
