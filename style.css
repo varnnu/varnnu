@@ -221,9 +221,9 @@ header {
 
 /* name  */
 .landing-text h1 {
-  font-size:  11rem;
+  font-size:  12rem;
   font-weight: 500;
-  font-family:  "Kaushan Script", sans-serif;
+  font-family: 'Metal Mania', cursive;
   background: linear-gradient(to top,ivory 25%, rgba(31, 131, 134, 0.644));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -269,7 +269,9 @@ header {
 
 /* typewriter */
 .txt-type>.txt {
-  font-family: "Open Sans", "sans-serif";
+  font-family: 'Amatic SC', cursive;
+  color: ivory;
+  
   border-right: 0.2rem solid #777;
 }
 
