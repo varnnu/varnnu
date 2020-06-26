@@ -1,8 +1,8 @@
 <?php
-if(isset($_POST['submit'])){
-    $name= $_POST['name'];
-    $email= $_POST['email'];
-    $message= $_POST['message'];
+if(isset($_GET['submit'])){
+    $name= $_GET['name'];
+    $email= $_GET['email'];
+    $message= $_GET['message'];
 
     $to="nimshamohammed@gmail.com";
     $subject="Form submitted from personal website"
