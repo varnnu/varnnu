@@ -1,16 +1,21 @@
 <?php
 if(isset($_POST['submit'])){
     $name= $_POST['name'];
-    $mailfrom= $_POST['email'];
+    $email= $_POST['email'];
     $message= $_POST['message'];
 
-    $mailto="varnnu666@gmail.com";
-$headers="From: ".$mailfrom;
-$txt="you have recieved email from " .$name. ".\n\n".$message;
+    $to="nimshamohammed@gmail.com";
+    $subject="Form submitted from personal website"
+    $message="Name: ".$name."wrote a message for you\n" .$message."\n";
+    $headers= "From: " .$email;
 
-mail($mailto,$headers, $txt);
-header("Location: thankyou.html?mailsend");
+
+
+    if(mail($to,$subject,$message,$headers)){
+        echo "Success"
+            #header("Location: thankyou.html?mailsend");
+    }else{
+        echo "Not success"
+    }
 }
-
-
 ?>
