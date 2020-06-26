@@ -1,21 +1,16 @@
 <?php
-if(isset($_GET['submit'])){
-    $name= $_GET['name'];
-    $email= $_GET['email'];
-    $message= $_GET['message'];
+if(isset($_POST["submit"])) {
+$recipient = "nimshamohammed@gmail.com"; //my email
+echo $subject = 'Email message from Point Plumbing';
+echo $name = $_POST ["name"];
+echo $email = $_POST["email"];
+echo  $message = $_POST["message"];
 
-    $to="nimshamohammed@gmail.com";
-    $subject="Form submitted from personal website"
-    $message="Name: ".$name."wrote a message for you\n" .$message."\n";
-    $headers= "From: " .$email;
+ $mailBody="Name: $name\nEmail: $email\n\n$message"; 
 
+ mail($recipient, $subject, $mailBody, "From: $name <$email>");
 
+echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
 
-    if(mail($to,$subject,$message,$headers)){
-        echo "Success"
-            #header("Location: thankyou.html?mailsend");
-    }else{
-        echo "Not success"
-    }
 }
 ?>
