@@ -38,15 +38,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="swiper.min.js"></script>
     <script src="app.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen" />
+  <script type="text/javascript">
+    $(function() {
+        $('.gallery a').lightBox();
+    });
+    </script>
   
 
     <meta name="theme-color" content="#090a20" />
 
 </head>
 
-<body >
-   
-    <div id="particles-js"  >
+<body>
         <header>
             <nav class="navbar" >
                 <span class="navbar-toggle" id="js-navbar-toggle">
@@ -82,7 +87,7 @@
 
 
             <div class="landing-text" id="home" >
-                <h1  >VARNU</h1> <br>
+                <h1>VARNU</h1> <br>
 
                 <!-- animated h6 -->
                 <h6>
@@ -105,11 +110,13 @@
                         <h6>Myself</h6>
                     </div>
                     <div class="about-para">
-                    <p>I, Varnnu S Kumar,native from the beautiful town of beaches-Varkala and currently 
-                        living in the capital of Kerala-Thiruvananthapuram. I beleive in now
-                        and so i am enjoying every moments of my life. "We live only once " that's mt moto.
-                        In all, I am not extraordinary, but an ordinary man who thinks in my own
-                        way. Thats make the differnce.I am a creative person who loves looking at things creatively.</p>
+                    <p>I'm Varnnu from Varkala, a town will full of beaches in th world,
+                        in the city Trivandrum, Kerala.I always fascinated how a vehicle works-#carguy. 
+                        Enjoy every little moment of life after all We Live Only Once. I love to
+                        take photos. I know that doesn't make me a good photographer but here is some 
+                        of the photos i took.
+
+                    </p>
                         <p><i>Scroll down for more about me.</i></p>
                     </div>        
                     <div class="social-media">
@@ -148,8 +155,9 @@
                             <i class="fas fa-pencil-ruler"></i>
                         </div>
                         <h1>Architecture </h1>
-                        <p>Each building has a history to see, a story to tell. That attracted me to
-                            buildings. I enjoy to work on it and love seeing it completed.</p>
+                        <p>Each building has it's history to see, it's story to tell. That attracted me to
+                            buildings. I enjoy workking on buildings and one day,
+                             love to see my creation looking at me too.</p>
                     </div>
 
                     <div class="skills" data-aos="fade-in" data-aos-delay="200">
@@ -157,8 +165,9 @@
                             <i class="fas fa-car" ></i>
                         </div>
                         <h1>Car enthusiast</h1>
-                        <p>I love cars- any and every car. I could see their soul while i drive them.
-                            I feel power, freedom and adventure in them. </p>
+                        <p>I love cars, any and every one of them. I feel Adrenaline,the
+                             Power, and Adventure when i'm dirving one. I wish to
+                            drive every  type of car. </p>
                     </div>
 
                     <div class="skills" data-aos="fade-in" data-aos-delay="300">
@@ -166,8 +175,9 @@
                             <i class="fas fa-memory"></i>
                         </div>
                         <h1>Automotive Designing</h1>
-                        <p>I look every vehicle in different way and i love it look different. 
-                            Making a vehicle different in every aspect is my key point. 
+                        <p>Every vehicle is different in it's own way and i love what makes
+                            it different. Anyone can drive a vehicle,but only some can make your heart
+                            want more. My dream is to built a car that can do that. 
                         </p>
                     </div>
 
@@ -177,63 +187,67 @@
             </div>
         </section>
 
+
+      
+
+        <!-- services section -->
         <section class="services" id="hobbies">
             <div class="container">
-                <div class="row px-3">
-           
-                    <div class=" col-md-12 section-heading">
-                        <h1>HOBBIES</h1>
-                    </div>
-            
-                
-                
-                <div class="col-md-4">  
-                    <div class="skills"  data-aos="fade-in" data-aos-delay="100">
+                <div class="section-heading">
+                    <h1>Hobbies</h1>
+                </div>
+
+                <div class="my-skills">
+
+                    <div class="hobby text-centre" data-aos="fade-in" data-aos-delay="100" style="padding-left:7rem;">
                         <div class="icon-container">
-                            <i class="fas fa-camera-retro"></i>
+                            <i class="fas fa-pencil-ruler"></i>
                         </div>
-                        <h1>Photography</h1>
+                        <h1>Photography </h1>
                         
                     </div>
-                </div>
-                <div class="col-md-4"> 
-                    <div class="skills "   data-aos="fade-in" data-aos-delay="200">
+
+                    <div class="hobby text-centre" data-aos="fade-in" data-aos-delay="200" style="padding-left:6rem;">
                         <div class="icon-container">
-                            <i class="fas fa-film" ></i>
+                            <i class="fas fa-car" ></i>
                         </div>
-                        <h1>Movies & Musics</h1>
+                        <h1>Movies & Music</h1>
                     </div>
-                
-                <div class="col-md-4"> 
-                    <div class="skills" data-aos="fade-in" data-aos-delay="300">
+
+                    <div class="hobby text-centre " data-aos="fade-in" data-aos-delay="300" style="padding-left:6rem;">
                         <div class="icon-container">
-                            <i class="fas fa-video"></i>
+                            <i class="fas fa-memory"></i>
                         </div>
                         <h1>Modelling & Acting</h1>
+                       
                     </div>
                 </div>
-                <div class="col-md-4"> 
-                    <div class="skills" data-aos="fade-in" data-aos-delay="300">
+                
+                    <div class="my-skills">
+
+                   
+
+                    <div class="hobby text-centre" data-aos="fade-in" data-aos-delay="100" style="padding-left:8rem;">
                         <div class="icon-container">
-                            <i class="fas fa-route"></i>
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h1>Drawing </h1>
+                        
+                    </div>
+
+                    <div class="hobby text-centre" data-aos="fade-in" data-aos-delay="200" style="padding-left:8rem;">
+                        <div class="icon-container">
+                            <i class="fas fa-car" ></i>
                         </div>
                         <h1>Travelling</h1>
                     </div>
                 </div>
-                <div class="col-md-4 "> 
-                    <div class="skills" data-aos="fade-in" data-aos-delay="300">
-                        <div class="icon-container">
-                            <i class="fas fa-pencil-alt"></i>
-                        </div>
-                        <h1>Drawing </h1>
-                    </div>
                 </div>
-                
+                    
                 <br>
                 <br> <br>
             </div>
         </section>
-          
                 
 
 <!-- my experience start  -->
@@ -250,7 +264,7 @@
                        <div class="marker"></div>
                        <div class="timeline-content">
                           <h3>B Arch</h3>
-                          <span>McGan's Ooty School of Architecture</span>
+                          <span>McGan's Ooty School of Architecture<br>Ooty, TamilNadu</span>
                           
                        </div>
                     </div>
@@ -259,7 +273,7 @@
                        <div class="marker"></div>
                        <div class="timeline-content">
                         <h3>Higher Secondary</h3>
-                        <span>Govt Model HSS Varkala</span>
+                        <span>Govt Model Higher Secondary School<br>Varkala, Trivandrum</span>
                     </div>
                     </div>
                
@@ -267,10 +281,19 @@
                        <div class="marker"></div>
                        <div class="timeline-content">
                           <h3>High School</h3>
-                          <span>Sivagiri Sree Narayana SENIOR Secondary School</span>
+                          <span>Sivagiri Sree Narayana Senior Secondary School<br>Varkala, Trivandrum</span>
                           
                        </div>
                     </div>
+
+                    <div class="timeline-block timeline-block-left" data-aos="fade-in" data-aos-delay="200">
+                        <div class="marker"></div>
+                        <div class="timeline-content">
+                           <h3>Middle School</h3>
+                           <span>Vivekanandha Vocational HSS<br>Kollam</span>
+                           
+                        </div>
+                     </div>
                    
                 </div>
             </div>
@@ -291,81 +314,31 @@
             
             </div>
 
-        <div>
-            <p></p>
-            <!-- image section -->
-            <div class="container"> 
-                <div class="bio-container">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                              
-                            <div class="swiper-slide"  >
-                                <div class="imgbx" >
-                                    <img src="images/my1.jpg" alt="varnnu">
-                                </div>
-                                  
-                                <div class="detail">
-                                    <p> Swipe left &#8640;<br> </p>
-                                </div> 
+            <div class="gallery">
+                <div class="wrap">
+                    <ul>
+                        <li><a href="images/my1.jpg"><img style="width: 25% ;height:215px;padding-top: 33px;" src="images/my1.jpg" alt=""  /></a></li>
+                        <li><a href="images/my2.jpg"><img style="width: 25% ;height:203px;padding-top: 21px;" src="images/my2.jpg" alt="" /></a></li>
+                        <li><a href="images/my3.jpg"><img style="width: 25% ;height:191px;padding-top: 10px;" src="images/my3.jpg" alt=""  /></a></li>
+                        <li><a href="images/my4.jpg"><img style="width: 25% ;height:180px" src="images/my4.jpg" alt="" /></a></li>
+    
+                        <li><a href="images/my5.jpg"><img style="width: 25% ;height:180px" src="images/my5.jpg" alt="" /></a></li>
+                        <li><a href="images/my6.jpg"><img style="width: 25% ;height:180px" src="images/my6.jpg" alt="" /></a></li>
+                        <li><a href="images/my7.jpg"><img style="width: 25% ;height:180px" src="images/my7.jpg" alt="" /></a></li>
+                        <li><a href="images/my8.jpg"><img style="width: 25% ;height:180px" src="images/my8.jpg" alt="" /></a></li>
+                        <li><a href="images/my9.jpg"><img style="width: 25% ;height:180px" src="images/my9.jpg" alt="" /></a></li>
+                        <li><a href="images/my10.jpg"><img style="width: 25% ;height:180px" src="images/my10.jpg" alt="" /></a></li>
+                        <li><a href="images/my11.jpg"><img style="width: 25% ;height:180px"  src="images/my11.jpg" alt=""  /></a></li>
+                        <li><a href="images/my12.jpg"><img  style="width: 25% ;height:180px" src="images/my12.jpg" alt=""  /></a></li>
+                        
+                    <div class="clear"></div></ul>
+                </div>
+                
+        </div>
 
-                            </div>
-                            
-                            <div class="swiper-slide" >
-                                <div class="imgbx">
-                                    <img src="images/my3.jpg" alt="varnnu">
-                                </div>
-                            </div>
-                            <div class="swiper-slide" >
-                                <div class="imgbx">
-                                    <img  src="images/my4.jpg" alt="varnnu">
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide" >
-                                <div class="imgbx">
-                                    <img  src="images/my5.jpg" alt="varnnu">
-                                </div>
-                            </div>
-
-                              
-                            <div class="swiper-slide" >
-                                <div class="imgbx">
-                                    <img  src="images/my7.jpg" alt="varnnu">
-                                </div>
-                            </div>
-                            <div class="swiper-slide" >
-                                <div class="imgbx">
-                                    <img  src="images/my8.jpg" alt="varnnu">
-                                </div>
-                            </div>
-                            <div class="swiper-slide" >
-                                <div class="imgbx">
-                                    <img  src="images/my9.jpg" alt="varnnu">
-                                </div>
-                            </div>
-                            <div class="swiper-slide" >
-                                <div class="imgbx">
-                                    <img  src="images/my10.jpg" alt="varnnu">
-                                </div>
-                            </div>
-                            <div class="swiper-slide" >
-                                <div class="imgbx">
-                                    <img  src="images/my11.jpg" alt="varnnu">
-                                </div>
-                            </div>
-                            <div class="swiper-slide" >
-                                <div class="imgbx">
-                                    <img  src="images/my12.jpg" alt="varnnu">
-                                </div>
-                            </div>
-                            <div class="swiper-slide" >
-                                <div class="imgbx">
-                                    <img  src="images/my13.png" alt="varnnu">
-                                </div>
-                            </div>
-                                  
-                        </div>                     
-                    </div>
+        
+            
+            
                 <!-- Add Pagination -->
                 <div class="swiper-pagination text-centre"></div>
                 <h1 style="font-size: 30px;"><br><br> Clicks by me</h1>
@@ -429,8 +402,8 @@
                 </div>
             </div>  <br>
             <br>
-            <p>Every moment in my life is special and i am enjoying
-                       them the way it is. </p>
+            <p>Every moment in my Life is special and I'm enjoying
+                    every bit of it</p>
         </div>
     </section>
 
@@ -495,7 +468,7 @@
                  
             </div>
             <div class="aju">
-                <p>&copy; VaЯnu S Kumar</p>
+                <p>&copy; VaЯnu.</p>
                 </div>
              
             <div class="col-lg-12-sm-12-md-12" ></div>
