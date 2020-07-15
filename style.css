@@ -385,6 +385,8 @@ header {
   display: flex;
 flex-flow: row;
   text-align: center;
+
+  
 }
 
 .skills {
@@ -1120,6 +1122,3 @@ textarea.input100 {
 .thankyou h6{
   font-size: 2rem,
 }
-
-
-

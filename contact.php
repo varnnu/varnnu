@@ -1,5 +1,4 @@
 <?php
-echo "hai";
 //variable setting
 $name =$_REQUEST['name'];
 $email =$_REQUEST['email'];
