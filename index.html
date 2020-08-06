@@ -39,8 +39,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="swiper.min.js"></script>
     <script src="app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- 
+  
 
     <meta name="theme-color" content="#090a20" />
 
@@ -481,7 +480,7 @@ I Love cars, any and every one of them. I can feel their soul when i drive them.
                     <div class="wrap-contact100">
                         
 
-                        <form id="submit-form" class="contact100-form" action="">
+                        <form id="submit-form" class="contact100-form"  method="post" action="https://formspree.io/xgenrqqj">
 
                             
 
@@ -491,7 +490,7 @@ I Love cars, any and every one of them. I can feel their soul when i drive them.
                             </div>
 
                             <div class="wrap-input100">
-                                <input class="input100" type="email" name="email" placeholder="E-mail" required>
+                                <input class="input100" type="email" name="_replyto" placeholder="E-mail" required>
                                 <span class="focus-input100"></span>
                             </div>
                         
@@ -597,25 +596,7 @@ I Love cars, any and every one of them. I can feel their soul when i drive them.
                 el: '.swiper-pagination',
               },
             });
-        
-         $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbxFo5gxKhcDsjVX2D_S2CCN0m3SKX5pX6sr3MQdtvJGuIAHDkI/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            });
-        });
-   
+       
  
             </script>
 
