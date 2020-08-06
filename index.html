@@ -39,6 +39,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="swiper.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  
 
     <meta name="theme-color" content="#090a20" />
@@ -596,7 +597,27 @@ I Love cars, any and every one of them. I can feel their soul when i drive them.
               },
             });
         
+       
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxFo5gxKhcDsjVX2D_S2CCN0m3SKX5pX6sr3MQdtvJGuIAHDkI/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                   // window.location.reload()
+                    window.location.href="thankyou.html"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+ 
             </script>
+
 
 </body>
 
