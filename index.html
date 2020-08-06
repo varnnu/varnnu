@@ -481,7 +481,7 @@ I Love cars, any and every one of them. I can feel their soul when i drive them.
                     <div class="wrap-contact100">
                         
 
-                        <form id="contactform" class="contact100-form" action="">
+                        <form id="contactform" class="contact100-form" action="https://script.google.com/macros/s/AKfycbxFo5gxKhcDsjVX2D_S2CCN0m3SKX5pX6sr3MQdtvJGuIAHDkI/exec" method="post">
 
                             
 
@@ -491,7 +491,7 @@ I Love cars, any and every one of them. I can feel their soul when i drive them.
                             </div>
 
                             <div class="wrap-input100">
-                                <input class="input100" type="email" name="_replyto" placeholder="E-mail" required>
+                                <input class="input100" type="email" name="email" placeholder="E-mail" required>
                                 <span class="focus-input100"></span>
                             </div>
                         
@@ -599,23 +599,7 @@ I Love cars, any and every one of them. I can feel their soul when i drive them.
             });
         
        
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbxFo5gxKhcDsjVX2D_S2CCN0m3SKX5pX6sr3MQdtvJGuIAHDkI/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                   window.location.reload()
-                    //window.location.href="thankyou.html"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            })
-        })
+   
  
             </script>
 
